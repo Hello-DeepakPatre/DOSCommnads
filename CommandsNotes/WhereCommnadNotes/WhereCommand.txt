@@ -1,0 +1,12 @@
+    WHERE /?
+    WHERE myfilename1 myfile????.*
+    WHERE $windir:*.*
+    WHERE /R c:\windows *.exe *.dll *.bat
+    WHERE /Q ??.???
+    WHERE "c:\windows;c:\windows\system32:*.dll"
+		"Q"
+    "In place of Q any path which is set in Environment Variable"
+    WHERE /F /T *.dll
+    M:\TYPING RESULT>where *.*  //Search with exact match in all system directory...
+    M:\TYPING RESULT>where $PATH:*.*  //Search in all path specified in PATH Environment variable orderwise.
+    

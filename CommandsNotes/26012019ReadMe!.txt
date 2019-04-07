@@ -1,0 +1,14 @@
+Some commands
+---------------
+
+write	To Open WordPad.
+winver  To Open Window version wizard.
+winrm   Script to open window remote management.
+whoami  To show currently loged username
+
+Deep study in C:\Windows\System32\ 
+26/01/2019 All those executable files are avaiable here, that's internally used bt system.
+
+ 
+
+

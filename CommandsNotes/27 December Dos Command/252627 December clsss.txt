@@ -1,0 +1,525 @@
+Windows Basic commands
+--------------------------
+Note: Windows DOS commands is not case-
+DOS Based OS like- windows use DOS command shell.
+
+Unix Based OS like-Linux and thair different flavour use Base shell.
+
+Almost both are interpreted scripting language.  But linux bash shell is case-sensitive.
+
+Scripting languages are loosely and weak languages they work without some rules and regualtion.
+----------------------------------------- 
+
+25 Hollyday Chritmas
+26/12/2018 learn how to use computer as a developer and told more keyboard shortcut.
+amd talk about dos commnnd.
+-----------------------------
+
+TO MOUNT FORM ONE DRIVE TO ANOTHER DIRVE
+-------------------------------------------
+
+Syntax:
+
+drivename:
+
+We can use it from anywhere to mount.
+
+------------------------------------------
+
+TO OPEN ANY DIRECTORY IN FILE EXPLORER
+---------------------------------
+ 
+Syntax-
+
+>start.   //open spcified directory in file explorer.
+---------------------------------------
+
+Some popular application those are directoly open using windows command prompt or run commnad.
+______________________________________
+
+chorme  //for chrome browser
+cmd   //for windows command prompt
+calc   //for calculator
+explore  //for file explorer
+ieexplore  //for Internet explorer
+rundll32.exe sysdm.cpl , EditEnvironmentVariables  // to open environment variable in secure mode.
+sysinfo  //for advanced system information
+ipconfig  //for ip configuration
+ping    // for internet status and configuration.
+
+DATE COMMAND
+---------------
+
+Create file using text editer
+--------------------------------
+
+syntax:
+
+Editer name  //Open editer
+
+Editer name  filename.extension  //To open a file with specified name and extension.
+
+If file already exists it's open it otherwise prompt for create new file.
+
+Example: >notepad or notepad++
+>notepad ThisIsTextFiles.txt 
+
+---------------------------------------
+
+DATE COMMAND
+-------------------
+Display or sets the date.
+
+DATE [/T | date]
+
+Type DATE without parameters to display the current date setting and
+a prompt for a new one.  Press ENTER to keep the same date.
+
+If Command Extensions are enabled the DATE command supports
+the /T switch which tells the command to just output the
+current date, without prompting for a new date.
+
+----------------------------------
+TIME COMMAND
+--------------------
+Displays or sets the system time.
+
+TIME [/T | time]
+
+Type TIME with no parameters to display the current time setting and a prompt
+for a new one.  Press ENTER to keep the same time.
+
+If Command Extensions are enabled the TIME command supports
+the /T switch which tells the command to just output the
+current time, without prompting for a new time.
+
+----------------------------------------
+
+DIR COMMAND
+-------------------
+Displays a list of files and subdirectories in a directory.
+
+DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N]
+  [/O[[:]sortorder]] [/P] [/Q] [/R] [/S] [/T[[:]timefield]] [/W] [/X] [/4]
+
+EXAMPLE:
+>dir  //shows all files and folder of specified directory or drive.
+
+>dir/s  //shows all files and folder and also show subdirectories and thair files. With time and date whenever it's created.
+
+>dir *.txt   // shows only all .txt file in console.
+
+>dir *.exe   //shows only all .exe file in console.
+
+>dir a*    // shows the filename started with letter a(In a file like-about.extension).
+
+>dir *a    // shows the filename end with letter a.
+
+>dir *a*    // shows the filename match with letter a.
+
+We can use it with any command. 
+
+
+sensitive.
+
+Definition of cd commnad
+--------------------------
+cd/chdir -    Displays the name of or changes                the current directory.
+
+syntax:
+--------------------------
+cd ..
+cd drive:     Display the current directory in               the specified drive.
+cd pathname   pathname-Where want to move.
+
+chdir.        To show the current directory.
+chdir..       To show the parent directory.
+cd/           To move root directory of the                  specified drive.
+cd            To display the current drive and 	      directory.
+
+chdir [/d][drive:][path]   To switch one drive to another drive. and also in to move the specified directory in the specified dirve. 
+
+example: C:Users\Deepak Patre\Desktop>cd /d d:ParentFolder\SubFolder
+
+or we can // goto inside drive directory. 
+
+C:\Users\Deepak Patre\Desktop>cd /d d: //switch to another drive from an exiting drive.
+
+or we can
+
+D:\>cd /d c:\windows  // switch to windows directory inside the C drive.
+
+From Dos help
+-----------------------
+Note:First must be read your written note.
+
+..   Specifies that you want to change to the parent directory.
+
+Type CD drive: to display the current directory in the specified drive.
+Type CD without parameters to display the current drive and directory.
+
+Use the /D switch to change current drive in addition to changing current
+directory for a drive.
+
+If Command Extensions are enabled CHDIR changes as follows:
+
+The current directory string is converted to use the same case as
+the on disk names.  So CD C:\TEMP would actually set the current
+directory to C:\Temp if that is the case on disk.
+
+CHDIR command does not treat spaces as delimiters, so it is possible to
+CD into a subdirectory name that contains a space without surrounding
+the name with quotes.  For example:
+
+    cd \winnt\profiles\username\programs\start menu
+
+is the same as:
+
+    cd "\winnt\profiles\username\programs\start menu"
+
+which is what you would have to type if extensions were disabled.      
+
+
+
+27/12/2018
+------------
+COLOR COMMNAD
+
+SYNTAX: color [attr]
+
+Example:-
+color e              e stads for-Light Yellow
+
+color                without parameters restore the default color.
+
+color 0a             Produces light green(fore) on black(back).
+
+0a                   stands for two hex digit. In which first corresponds to the background. and the second one for foreground.
+
+0-9 AND A-F
+
+TITLE COMMAND
+-------------
+Sets the window title for the command promt window.
+
+syntax:
+
+TITLE [string]
+
+string       Specifies the title for the command prompt window.
+
+example: >title Learn Dos Command
+
+TREEE COMMAND
+--------------
+
+Graphically displays the folder structure of a drive or path.
+
+Syntax:
+
+TREE [drive:][path] [/F] [A]          // option and arguements are optional for additional feature.
+
+/F               Display the names of the files in each folder with extension.
+/A               Use ASCII instead of extended characters.
+
+example:
+
+tree         display only folder structure.
+tree /f      display the folder strucure as well as name of the files in each folder with extension.
+tree /a      show folde structure like-  +---ParentFolderName
+                                                            +---SubFolder
+
+c:\Users\Deepak patre\Desktop>tree d:\ParentFolder          // Display folder strucure of ParentFolder in d drive.
+
+D:\>tree d:\ParentFolder /f or without /f       //parent folder contain file Hello.txt
+
+---------------------------------------------------------------------------
+
+RD OR RMDIR COMMNAD
+--------------------
+
+Removes (deletes) a directory.
+
+RMDIR [/S] [/Q] [drive:]path
+RD [/S] [/Q] [drive:]path
+
+    /S      Removes all directories and files in the specified directory
+            in addition to the directory itself.  Used to remove a directory
+            tree.
+
+    /Q      Quiet mode, do not ask if ok to remove a directory tree with /S
+
+
+Example:
+
+>rd /s /q d:\ParentFolder\    or rd /s /q d:\ParentFolder
+
+//Remove all the diretories with files in quite mode. the directories itself
+
+>rd /s d:\ParentFolder   // remove all the directories and files in addition thd directories itself.
+
+
+
+RENAME OR REN COMMAND
+----------------------
+
+Renames a file or files.
+
+Syntax:
+
+RENAME [drive:][path]filename1 filename2.
+REN [drive:][path]filename1 filename2.
+
+Note that you cannot specify a new drive or path for your destination file(filename2).
+
+
+COPY CON COMMMAND
+------------------
+To create any type of file and copied it to diretories.
+
+Syntax:
+copy con filename.extension> press enter> write content on it> press Ctrl+Z to save it and press enter. File will be copied.
+
+
+TYPE COMMNAD
+-------------
+
+Displays the contents of a text file or files.
+
+Syntax:
+
+TYPE [drive:][path]filename
+
+example:
+
+type about.txt        // show the content of file in console window.
+
+notepad about.txt     // show the content in notepad.
+
+c:\>type c:\Users\"Deepak patre"\Desktop\about.txt
+Hello Deepak Patre How are you.....
+
+D:\>type c:\Users\"Deepak patre"\Desktop\about.txt
+Hello Deepak patre How are you.....
+
+DEL/ERASE COMMAND
+----------------
+
+Delete one or more files.
+
+Syntax:DEL [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
+ERASE [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
+
+Example:
+
+del *.txt    // Delete all files with .txt extension.
+
+del fineneme1   //with extension.
+
+
+D:\>DEL /A:R 2.txt                           //Delete file 2 which is read only mode.
+
+D:\>DEL /s 3.txt
+Deleted file - D:\3.txt
+Deleted file - D:\New folder\3.txt          //Delete specified file from all the subdirectories. 
+
+D:\>del /f 3.txt                 // Delete read only file force fully.
+
+D:\>del *.txt  //type it delete multiple files with extension .txt. If it's not deleted means available in read only mode.
+D:\2.txt
+Access is denied.
+D:\3.txt
+Access is denied.
+D:\4.txt
+Access is denied.
+
+D:\>del /f *.txt     //Force fully deleted multiple fiels with extension .txt.
+
+ 
+
+MOVE COMMMAND
+--------------
+
+Moves files and renames files and directories.
+
+Syntax:
+
+To move one or more files:
+MOVE [/Y | /-Y] [drive:][path]filename1[,...] destination
+
+To rename a directory:
+MOVE [/Y | /-Y] [drive:][path]dirname1 dirname2
+
+
+example:see screemshots.
+
+COPY COMMNAND
+--------------
+Copies one or more files to another location.
+
+COPY [/D] [/V] [/N] [/Y | /-Y] [/Z] [/L] [/A | /B ] source [/A | /B]
+     [+ source [/A | /B] [+ ...]] [destination [/A | /B]]
+
+  source       Specifies the file or files to be copied.
+  /A           Indicates an ASCII text file.
+  /B           Indicates a binary file.
+  /D           Allow the destination file to be created decrypted
+  destination  Specifies the directory and/or filename for the new file(s).
+  /V           Verifies that new files are written correctly.
+  /N           Uses short filename, if available, when copying a file with a
+               non-8dot3 name.
+  /Y           Suppresses prompting to confirm you want to overwrite an
+               existing destination file.
+  /-Y          Causes prompting to confirm you want to overwrite an
+               existing destination file.
+  /Z           Copies networked files in restartable mode.
+  /L           If the source is a symbolic link, copy the link to the target
+               instead of the actual file the source link points to.
+
+The switch /Y may be preset in the COPYCMD environment variable.
+This may be overridden with /-Y on the command line.  Default is
+to prompt on overwrites unless COPY command is being executed from
+within a batch script.
+
+To append files, specify a single file for destination, but multiple files
+for source (using wildcards or file1+file2+file3 format).
+
+
+ECHO COMMAND
+--------------
+Displays messages, or turns command-echoing on or off.
+
+  ECHO [ON | OFF]
+  ECHO [message]
+
+Type ECHO without parameters to display the current echo setting.
+
+Example:see screenshots.
+
+
+D:\>echo %username%
+DEEPAK PATRE
+
+D:\>echo %os%
+Windows_NT
+
+to see different variable and add your environment var go to control panel>advanced system setting>click on en var> add or remove.
+
+SET COMMNAD
+-------------
+
+Displays, sets, or removes cmd.exe environment variables.
+
+SET [variable=[string]]
+
+  variable  Specifies the environment-variable name.
+  string    Specifies a series of characters to assign to the variable.
+
+Type SET without parameters to display the current environment variables.
+
+Example:
+
+D:\>set GreetMessage=Hello Deepak Patre.....
+
+D:\>echo %GreetMessage%
+Hello Deepak Patre.....
+
+
+this is session environment variable. It means it you close the windows commnad prompt.
+vanishes.
+
+TO SET PARAMNENTLY
+----------------------
+
+To set permanently for specific user or whole system goto control panel>advanced system setting>Click on Environment Variable>Edit or Modified or Add New EN VAR.>After modified close CMD and then open again type with echo to see path and to run name of the executable file like-.jpg,.png,.mp3,.mp4. etc.
+
+If space uses between the file name use write it within the double quotes. or extension must be need for these type of executable file.
+
+No need-.bat, .exe
+
+Let's see
+-----------
+
+C:\Users\DEEPAK PATRE>echo %GreetMessage%
+%GreetMessage%
+
+It's print same written string instead of vallue.
+
+If don't want to see commamd-echoing turn of echo----
+
+Like: echo %GreetMessage%-command with arguement.
+value print is-%GreetMessage%
+
+C:\Users\DEEPAK PATRE>set Var1=Hello
+
+C:\Users\DEEPAK PATRE>set Var2=Deepak
+
+C:\Users\DEEPAK PATRE>set Var3=How are you
+
+C:\Users\DEEPAK PATRE>set Var4=%Var2% Patre
+
+C:\Users\DEEPAK PATRE>set Var5=%Var1% %Var4% %Var3%
+
+C:\Users\DEEPAK PATRE>echo %Var5%
+Hello Deepak Patre How are you
+
+C:\Users\DEEPAK PATRE>set Var2=%Var2% Patre
+
+C:\Users\DEEPAK PATRE>echo %Var2%
+Deepak Patre
+
+C:\Users\DEEPAK PATRE
+
+To resete define set commnad
+------------------------------
+
+Type set [variableName=]   //without value.cm
+
+Value reset only for current session. To perma remove goto control panel.
+
+Note: Don't reset system Variable.
+
+
+To set temp path
+---------------------
+
+C:\Windows>set path=%path%;d:
+d: sepecifies bat file available in d drive root folder.
+
+either inplace of %path% we can use value of it.
+
+
+; semicoln is delimeter(separter).
+
+
+-------------------------------------
+
+How to Redirecte
+--------------------
+
+>echo %path%> d:\TextFiles\Duplicate.txt       // It's print all the system path in specified file in specified directory.
+
+same as
+
+>notepad or notepad++ drive:\pathname\filename.extension
+
+If specified file is exists then it's directoly open it in specified textEditor otherwise prompt to create that file.
+
+>echo %path%> d:\Hello.txt
+
+If file ready exists. To append use >> inplace of >.
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
